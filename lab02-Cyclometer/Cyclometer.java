@@ -10,8 +10,8 @@ public class Cyclometer {
     public static void main(String [] args) {
 
 //input data
-int secsTrip1=480; //the time for trip 1 in seconds
-int secsTrip2=3220; //the time for trip 2 in seconds
+double secsTrip1=480; //the time for trip 1 in seconds
+double secsTrip2=3220; //the time for trip 2 in seconds
 int countsTrip1=1561; // front wheel rotations trip 1
 int countsTrip2=9037; // front wheel rotations trip 2
 double wheelDiameter=27.0; // the diameter of the wheel
