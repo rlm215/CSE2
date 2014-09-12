@@ -38,7 +38,7 @@ import java.util.Scanner; //allows user to input
         //Fourth digit after the decimal point
         fourth = (int)(input*10000)%10;
         
-        
+        //print out the answer
         System.out.print("The four digits are " +first+ +second+ +third+ +fourth+ ".");
             
         } //closes main method
