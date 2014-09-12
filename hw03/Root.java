@@ -20,9 +20,7 @@
         System.out.println ("Enter a double, and I print its cubed root- ");
         double number = myScanner.nextDouble();
         
-      
         double root, root1, root2, root3, root4, root5;
-        
         
         //calculate cubed root and improve 4 times
         root = number/3;
