@@ -29,22 +29,33 @@ public class IncomeTax {
                 if (input<20) {
                     taxrate1 = .05;
                     totalTax1 = (input*1000)*.05;
-                    System.out.println ("The tax rate on " +input*1000+  " is 5.0 , and the tax is " +totalTax1+ ".");
-                        }
+                    totalTax1 = Math.round (totalTax1*100);
+                    totalTax1 = totalTax1/100.0;
+                    System.out.println ("The tax rate on " +input*1000+  " is 5.0% , and the tax is " +totalTax1+ ".");
+                    return;
+                }
                  if ((input>=20) && (input <40)) {
                     taxrate2 = .07;
                     totalTax2 = (input*1000)*.07;
-                    System.out.println ("The tax rate on " +input*1000+ " is 7.0 , and the tax is " +totalTax2+ ".");
+                    totalTax2 = Math.round (totalTax2*100);
+                    totalTax2 = totalTax2/100.0;
+                    System.out.println ("The tax rate on " +input*1000+ " is 7.0% , and the tax is " +totalTax2+ ".");
+                    return;
                     }
                 else if ((input>=40) && (input<78)) {
                     taxrate3 = .12;
                     totalTax3 = (input*1000)*.12;
-                    System.out.println ("The tax rate on " +input*1000+ " is 12.0 ,and the tax is " +totalTax3+ ".");
-                    }
+                    totalTax3 = Math.round (totalTax3*100);
+                    totalTax3 = taxrate3/100.0;
+                    System.out.println ("The tax rate on " +input*1000+ " is 12.0% ,and the tax is " +totalTax3+ ".");
+                    return;
+                }
                 else {
                     taxrate4 = .14;
                     totalTax4 = (input*1000)*.14;
-                    System.out.println ("The tax rate on " +input*1000+ " is 14.0 , and the tax is " +totalTax4+ ".");
+                    totalTax4 = Math.round(totalTax4*100);
+                    totalTax4 = totalTax4/100.0;
+                    System.out.println ("The tax rate on " +input*1000+ " is 14.0% , and the tax is " +totalTax4+ ".");
                     return;        
                      }
             } //end check int >0
