@@ -26,7 +26,7 @@ public class IncomeTax {
             int input = myScanner.nextInt();
             double salary = input*1000;
             if (input >0) {
-                if (input<20) {
+                if (input<20) { //first tax bracket 
                     taxrate1 = .05;
                     totalTax1 = (input*1000)*.05;
                     totalTax1 = Math.round (totalTax1*100);
@@ -34,7 +34,7 @@ public class IncomeTax {
                     System.out.println ("The tax rate on " +input*1000+  " is 5.0% , and the tax is " +totalTax1+ ".");
                     return;
                 }
-                 if ((input>=20) && (input <40)) {
+                 if ((input>=20) && (input <40)) { //second tax bracket
                     taxrate2 = .07;
                     totalTax2 = (input*1000)*.07;
                     totalTax2 = Math.round (totalTax2*100);
@@ -42,7 +42,7 @@ public class IncomeTax {
                     System.out.println ("The tax rate on " +input*1000+ " is 7.0% , and the tax is " +totalTax2+ ".");
                     return;
                     }
-                else if ((input>=40) && (input<78)) {
+                else if ((input>=40) && (input<78)) { //thired tax bracket
                     taxrate3 = .12;
                     totalTax3 = (input*1000)*.12;
                     totalTax3 = Math.round (totalTax3*100);
@@ -50,7 +50,7 @@ public class IncomeTax {
                     System.out.println ("The tax rate on " +input*1000+ " is 12.0% ,and the tax is " +totalTax3+ ".");
                     return;
                 }
-                else {
+                else { //don't need a condition here since number >= 78 are other 
                     taxrate4 = .14;
                     totalTax4 = (input*1000)*.14;
                     totalTax4 = Math.round(totalTax4*100);
