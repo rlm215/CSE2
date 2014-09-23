@@ -42,7 +42,7 @@ public class IncomeTax {
                     System.out.println ("The tax rate on " +input*1000+ " is 7.0% , and the tax is " +totalTax2+ ".");
                     return;
                     }
-                else if ((input>=40) && (input<78)) { //thired tax bracket
+                else if ((input>=40) && (input<78)) { //thired tax bracket//
                     taxrate3 = .12;
                     totalTax3 = (input*1000)*.12;
                     totalTax3 = Math.round (totalTax3*100);

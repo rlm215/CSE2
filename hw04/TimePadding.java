@@ -19,11 +19,17 @@ public class TimePadding {
             System.out.println ("Enter the time in seconds:");
             int time = myScanner.nextInt();
             int hours, minutes, seconds;
-            if (time > 0) {
-                hours = (time/60)/60; //finds hours
-                minutes = (time/60)%60 // minutes is seconds divdided by 60 twice then remainder
-                seconds = input%60 // seconds is remainder after divided by 60
+                if (time > 0) {
+                    hours = (time/60)/60; //finds hours
+                    minutes = (time/60)%60; // minutes is seconds divdided by 60 twice then remainder
+                    seconds = time%60;// seconds is remainder after divided by 60
                 
-                if (hours == 0 )
-            }
-}
+                    //System.out.println ("The time is");
+                    System.out.printf ("The time is %s:%02x:%02x\n" ,hours, minutes, seconds);
+                }
+                else {
+                    System.out.println("The time was not positive.");
+                    return;
+                }
+                 }
+                }
