@@ -24,12 +24,14 @@ public class TimePadding {
                     minutes = (time/60)%60; // minutes is seconds divdided by 60 twice then remainder
                     seconds = time%60;// seconds is remainder after divided by 60
                 
-                    //System.out.println ("The time is");
                     System.out.printf ("The time is %s:%02x:%02x\n" ,hours, minutes, seconds);
-                }
+                }    //closes if   
+                        //printf allows the print statement to be formated
+                        //%02 pads the zero if less that 2 numbers are present
+                        //%s prints as normal
                 else {
                     System.out.println("The time was not positive.");
                     return;
-                }
-                 }
-                }
+                }//closes else
+                 } //closes main method
+                }//closes class
