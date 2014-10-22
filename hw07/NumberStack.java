@@ -45,6 +45,9 @@ public class NumberStack{
                 System.out.println(" ");
         }//closes while 
         System.out.println("Using do while loops:");
+        a = 1;
+        b = 0;
+        c = 1;
         do {
             System.out.println(a);
             a++;
@@ -53,11 +56,11 @@ public class NumberStack{
                  System.out.print(" ");
                 do {
                     c--;
-                    System.out.println('-');
+                    System.out.print('-');
                 }while (c>0);
              }while ( b< input-a-1);
-        }while (a <= input);
-            c +=2;
+             c +=2;
             System.out.println(" ");
+        }while (a <= input);
     }//closes main method
 }//closes class
