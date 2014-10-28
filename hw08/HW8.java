@@ -65,7 +65,7 @@ public class HW8{
                     return k;
                     }//closes if
                     else {
-                        System.out.println("jsjdhdh");
+                        System.out.println("You did not return the correct value");
                         return ' ';
                     }//closes else
                     return ' ';
