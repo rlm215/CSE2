@@ -68,6 +68,7 @@ public class HW8{
                         System.out.println("You did not return the correct value");
                         return ' ';
                     }//closes else
+                    System.out.println(display);
                     return ' ';
             }//closes big if
             else {
