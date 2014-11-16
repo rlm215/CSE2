@@ -12,27 +12,27 @@ public class FindDuplicates{
     int num[]=new int[10];
     String answer="";
     do{
-      System.out.print("Enter 10 ints- ");
+      System.out.print("Enter 10 ints- "); //allows user enter 10 ints
       for(int j=0;j<10;j++){
-        num[j]=scan.nextInt();
+        num[j]=scan.nextInt(); // forming the array of 10 numbers
       }
       String out="The array ";
       out+=listArray(num); //return a string of the form "{2, 3, -9}"   
       if(hasDups(num)){
-        out+="has ";
+        out+="has "; //if hasDups is true
       }
       else{
-        out+="does not have ";
+        out+="does not have "; //if hasDups is false
       }
       out+="duplicates.";
       System.out.println(out);
       out="The array ";
       out+=listArray(num);    
       if(exactlyOneDup(num)){
-        out+="has ";
+        out+="has "; //exactly one dup is true
       }
       else{
-        out+="does not have ";
+        out+="does not have "; //exactly one dup is false
       }
       out+="exactly one duplicate.";
       System.out.println(out);
@@ -58,7 +58,7 @@ System.out.print("Go again? Enter 'y' or 'Y', anything else to quit- ");
         for(int a=0; a<num.length-1;a++){
             number = num[a];
             for (int b=a+1; b<num.length; b++){
-                if (number == num[b]){
+                if (number == num[b]){ //seeing if numbers in array are equal
                     duplicates++;
                 }
                 else{
@@ -88,7 +88,7 @@ System.out.print("Go again? Enter 'y' or 'Y', anything else to quit- ");
                 }//closes else
             }//closes nested for
         }//closes main for loop
-        if(duplicates == 1){
+        if(duplicates == 1){ //only allows for one duplicate
             return true;
         }//closes if
         else{
