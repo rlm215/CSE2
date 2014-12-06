@@ -58,7 +58,8 @@ System.out.println ("The total tax is " +totalTax+ " dollars.");
 subtotalCostofPurchase= totalSockCost+totalGlassCost+totalEnvelopeCost;
 System.out.println ("The subtotal or cost before tax is " +subtotalCostofPurchase+ " dollars.");
 
-// below is the final cost of the purchase with tax
+// below is the final cost of the purchase with tax 
+// With the rounded cost as well
 totalCostofPurchase= subtotalCostofPurchase+totalTax;
 double roundCost= (double) Math.round(totalCostofPurchase*100)/100;
 System.out.println ("The final cost of the purchase with tax is " +roundCost+ " dollars.");

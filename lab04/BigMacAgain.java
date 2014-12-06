@@ -69,7 +69,7 @@ public class BigMacAgain {
         
         }
         
-    //int nBigMacs= myScanner.nextInt();
+    
         
     
     
